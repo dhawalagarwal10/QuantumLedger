@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumLedger</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">QuantumLedger</div>
+                <div class="nav-links">
+                    <a href="#dashboard" class="nav-link">Dashboard</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to QuantumLedger</h1>
+            <p class="hero-description">Your all-in-one blockchain analytics and governance platform</p>
+            <button class="button">
+                Get Started
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="search-card">
+            <div class="search-form">
+                <input type="text" class="input" placeholder="Enter wallet address (0x...)" id="walletAddress">
+                <button class="button" id="analyzeButton">Analyze</button>
+            </div>
+        </div>
+
+        <div class="card-grid" id="cardGrid">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
